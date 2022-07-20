@@ -1,0 +1,9 @@
+Setup
+	- 4x4 grid and then get fancier if necessary
+	- fuse 4-connected neighbors into one abstracted cell
+Questions:
+	- name of abstracted cells?
+	- how to specify the abstractions?
+	- how to deal with time from abstracted solution to the original grid?
+	- groups of 2x2 don't work when width%2 != 0 or height%2 != 0. What to do with remaining rows/cols?
+	
