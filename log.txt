@@ -7,3 +7,11 @@ Questions:
 	- how to deal with time from abstracted solution to the original grid?
 	- groups of 2x2 don't work when width%2 != 0 or height%2 != 0. What to do with remaining rows/cols?
 	
+
+Ideas:
+	- Name: always the bottom left cell as anchor point: cell(1,1), cell(2,1), cell(1,2), cell(2,2) become abstracted_cell(1,1) etc.
+	- Specification: prob. In the .lp, with  abstracted_cell(X,Y) :- cell(X,Y), cell(X+1,Y), cell(X,Y+1), cell(X+1,Y+1), not abstacted_cell(X+1,Y+1) 
+	- that is a harder questions
+	- we prop. Have to write an exception (another abstracted_cell(X,Y) definition, dependent on left over cells)
+
+
