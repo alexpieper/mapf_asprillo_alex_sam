@@ -4,9 +4,22 @@
 
 init(object(node, (X,Y)), value(at, (X,Y))) :- X=1..xsize, Y=1..ysize.
 
-init(object(robot, X), value(at, (1,X))) :- X=1..agent.
-goal(X) :- X=1..agent.
+init(object(robot, 1), value(at, (1,4))).
+init(object(robot, 2), value(at, (4,4))).
 
-init(object(shelf, X), value(at, (xsize,ysize+1-X))) :- goal(X).
-init(object(product, X), value(on, (X, X))) :- goal(X).
-init(object(order, X), value(line, (X, X))) :- goal(X).
+% goal(X) :- X=1..agent.
+
+init(object(shelf, 1), value(at, (1,1))).
+init(object(shelf, 2), value(at, (4,1))).
+
+init(object(product, 1), value(on, (1, 1))). 
+init(object(product, 1), value(on, (2, 1))). 
+
+init(object(order, 1), value(line, (1, 1))). 
+init(object(order, 2), value(line, (1, 1))). 
+
+init(object(order, 1), value(pickingStation, 1)). 
+init(object(order, 2), value(pickingStation, 2)). 
+
+init(object(pickingStation, 1), value(at, (2,1))).
+init(object(pickingStation, 2), value(at, (3,1))).
