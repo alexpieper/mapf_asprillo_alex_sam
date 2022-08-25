@@ -16,12 +16,12 @@ Questions:
 	-q8: how can multiple files be fused into one using asp?
 	-q9: what are the absolute minimum requirements for approving? is solving only 2nx2m instances enough? 
 	is solving only instances where there are no two agents next to each other enough?
-	
+	-q10: why is there no wait actions?
+	-q11: all asprilo domains tacke the annonymous mapf problem? There is no way to assign robots to orders.
 
 Ideas:
 	- Name: always the bottom left cell as anchor point: cell(1,1), cell(2,1), cell(1,2), cell(2,2) become abstracted_cell(1,1) etc.
 	- Specification: prob. In the .lp, with  abstracted_cell(X,Y) :- cell(X,Y), cell(X+1,Y), cell(X,Y+1), cell(X+1,Y+1), not abstacted_cell(X+1,Y+1) 
 	- that is a harder questions
 	- we prop. Have to write an exception (another abstracted_cell(X,Y) definition, dependent on left over cells)
-
 
