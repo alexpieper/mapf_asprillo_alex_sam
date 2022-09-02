@@ -18,6 +18,8 @@ Questions:
 	is solving only instances where there are no two agents next to each other enough?
 	-q10: why is there no wait actions?
 	-q11: all asprilo domains tacke the annonymous mapf problem? There is no way to assign robots to orders.
+	-q12: why is the solver given a weird solution for the abstracted instance?
+	-q13: how to hide all raw_* atoms from the output of the abstracter?
 
 Ideas:
 	- Name: always the bottom left cell as anchor point: cell(1,1), cell(2,1), cell(1,2), cell(2,2) become abstracted_cell(1,1) etc.
