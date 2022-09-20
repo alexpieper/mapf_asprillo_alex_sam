@@ -20,6 +20,3 @@ init(object(raw_order,1),value(line,(1/3,1))).
 init(object(raw_order,1),value(pickingStation,1)).
 init(object(raw_order,2),value(line,(2,1))).
 init(object(raw_order,2),value(pickingStation,1)).
-
-
-% #show init(object(node, X), value(at, (Y, Z))).

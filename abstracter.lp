@@ -12,4 +12,5 @@ init(object(product,N),value(at,((X+1)/2,(Y+1)/2))) :- init(object(raw_product,N
 init(object(pickingStation,N),value(at,((X+1)/2,(Y+1)/2))) :- init(object(raw_pickingStation,N),value(at,(X,Y))).
 init(object(order,N),value(at,((X+1)/2,(Y+1)/2))) :- init(object(raw_order,N),value(at,(X,Y))).
     
-%#show init(object(node, ), value(at, )).
+%maybe try to only show the atoms, that dont have raw in them 
+%#show init/2.
