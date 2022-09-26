@@ -6,12 +6,12 @@ init(object(raw_order,1),value(pickingStation,1))
 init(object(raw_order,2),value(pickingStation,1))
 init(object(raw_robot,1),value(at,(1,4)))
 init(object(raw_robot,2),value(at,(4,4)))
-init(object(raw_shelf,1),value(at,(1,1)))
-init(object(raw_shelf,2),value(at,(4,1)))
+init(object(raw_shelf,1),value(at,(1,2)))
+init(object(raw_shelf,2),value(at,(4,2)))
 init(object(raw_product,1),value(on,(1,1)))
 init(object(raw_product,2),value(on,(2,1)))
 init(object(raw_pickingStation,1),value(at,(2,1)))
-init(object(raw_order,1),value(line,(0,1)))
+init(object(raw_order,1),value(line,(1,1)))
 init(object(raw_order,2),value(line,(2,1)))
 init(object(pickingStation,1),value(at,(1,1)))
 init(object(shelf,1),value(at,(1,1)))
@@ -42,5 +42,5 @@ SATISFIABLE
 
 Models       : 1
 Calls        : 1
-Time         : 0.005s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
-CPU Time     : 0.005s
+Time         : 0.003s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time     : 0.003s

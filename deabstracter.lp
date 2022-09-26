@@ -6,7 +6,7 @@ max_t(T) :- t(T), #max{TT, 1:t(TT)}=T.
 % assume goal is reachable by changing direction max 1 time
 % mark the first and second direction for each robot
 first((X, Y), ID) :- occurs(object(robot, ID), action(move,(X,Y)), 1).
-second((X2, Y2), ID) :- occurs(object(robot, ID), action(move,(X2,Y2)), T), max_t(T), first((X,Y), ID2), ID !=ID2.
+second((X2, Y2), ID) :- occurs(object(robot, ID), action(move,(X2,Y2)), T), max_t(T), first((X,Y), ID2), X!=X2, Y!=Y2, ID !=ID2.
     
 % encode moves into single integer to be able to count them
 move(1,ID, T):-  occurs(object(robot, ID), action(move,(X,Y)), T), X=0, Y=-1.
